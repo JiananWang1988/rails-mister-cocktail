@@ -3,6 +3,9 @@
     <div class="col-xs-12">
       <h1><%= @cocktail.name %></h1>
       <%= link_to "Back to all cocktails", root_path %>
+      <!-- show the photo -->
+        <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
+        <!-- show the photo -->
     </div>
   </div>
   <div class="row">

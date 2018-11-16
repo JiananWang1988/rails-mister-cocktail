@@ -5,6 +5,10 @@
 
       <%= simple_form_for @cocktail do |f| %>
         <%= f.input :name %>
+        <!-- add photo -->
+        <%= f.input :photo %>
+        <%= f.input :photo_cache, as: :hidden %>
+        <!-- add photo end -->
         <%= f.button :submit, class: 'btn btn-primary' %>
       <% end %>
     </div>
